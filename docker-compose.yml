@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: web_service
+
+  proxy:
+    build: proxy_service
+    ports:
+        - "5000:80"
